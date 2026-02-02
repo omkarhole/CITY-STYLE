@@ -3,10 +3,508 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <meta name="description" content="Frequently Asked Questions about City Style - Fashion clothing store. Find answers about orders, shipping, returns, sizing, and more.">
+    <meta name="keywords" content="FAQ, frequently asked questions, city style, fashion, help, support, shipping, returns">
+    <meta name="author" content="City Style">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FAQ - City Style">
+    <meta property="og:description" content="Find answers to frequently asked questions about City Style fashion store.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://citystyle.com/faq">
+    
+    <!-- Performance optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>FAQ - Frequently Asked Questions | City Style</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "name": "Frequently Asked Questions",
+      "description": "FAQ page for City Style fashion store",
+      "publisher": {
+        "@type": "Organization",
+        "name": "City Style"
+      },
+      "dateModified": "2026-02-02",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I track my order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can track your order using the tracking number provided in your confirmation email or visit our Order Tracking page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your return policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept returns within 30 days of purchase. Items must be in original condition with tags attached."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does shipping take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard shipping takes 3-5 business days. Express shipping is available for 1-2 business days delivery."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <h1>FAQ</h1>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -40px; left: 6px; background: var(--text-dark); color: var(--white); padding: 8px; text-decoration: none; z-index: 100; transition: top 0.3s;" onfocus="this.style.top='6px'" onblur="this.style.top='-40px'">Skip to main content</a>
     
+    <nav role="navigation" aria-label="Main navigation">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="../index.html" aria-label="City Style Homepage">CITY STYLE</a>
+        </div>
+        <button class="nav__menu__btn" id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="ri-menu-line" aria-hidden="true"></i>
+        </button>
+      </div>
+      <ul class="nav__links" id="nav-links" role="menubar">
+        <li role="none"><a href="../index.html#catalogue" role="menuitem">CATALOGUE</a></li>
+        <li role="none"><a href="../index.html#fashion" role="menuitem">FASHION</a></li>
+        <li role="none"><a href="../index.html#favourite" role="menuitem">FAVOURITE</a></li>
+        <li role="none"><a href="../index.html#lifestyle" role="menuitem">LIFESTYLE</a></li>
+        <li role="none">
+          <button class="btn" aria-label="Sign up for City Style">SIGN UP</button>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">FAQ</li>
+      </ol>
+    </nav>
+
+    <main id="main-content" class="faq section__container" role="main">
+      <header class="faq__header">
+        <h1 class="section__header">Frequently Asked Questions</h1>
+        <p class="faq__subtitle">Find answers to common questions about City Style</p>
+      </header>
+
+      <!-- Search FAQ -->
+      <div class="faq__search">
+        <div class="search__container">
+          <i class="ri-search-line search__icon" aria-hidden="true"></i>
+          <input type="text" id="faq-search" placeholder="Search FAQs..." aria-label="Search frequently asked questions">
+          <button type="button" id="clear-search" class="search__clear" aria-label="Clear search">
+            <i class="ri-close-line" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- FAQ Categories -->
+      <div class="faq__categories">
+        <h2>Browse by Category</h2>
+        <div class="categories__grid">
+          <button class="category__btn active" data-category="all" aria-pressed="true">
+            <i class="ri-question-line" aria-hidden="true"></i>
+            All Questions
+          </button>
+          <button class="category__btn" data-category="orders" aria-pressed="false">
+            <i class="ri-shopping-bag-line" aria-hidden="true"></i>
+            Orders & Payment
+          </button>
+          <button class="category__btn" data-category="shipping" aria-pressed="false">
+            <i class="ri-truck-line" aria-hidden="true"></i>
+            Shipping & Delivery
+          </button>
+          <button class="category__btn" data-category="returns" aria-pressed="false">
+            <i class="ri-arrow-go-back-line" aria-hidden="true"></i>
+            Returns & Exchanges
+          </button>
+          <button class="category__btn" data-category="sizing" aria-pressed="false">
+            <i class="ri-ruler-line" aria-hidden="true"></i>
+            Sizing & Fit
+          </button>
+          <button class="category__btn" data-category="account" aria-pressed="false">
+            <i class="ri-user-line" aria-hidden="true"></i>
+            Account & Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- FAQ Content -->
+      <div class="faq__content">
+        <!-- Orders & Payment -->
+        <div class="faq__section" data-category="orders">
+          <h3 class="section__title">
+            <i class="ri-shopping-bag-line" aria-hidden="true"></i>
+            Orders & Payment
+          </h3>
+          
+          <div class="faq__item" data-keywords="order track tracking number status">
+            <button class="faq__question" aria-expanded="false">
+              <span>How do I track my order?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>You can track your order in several ways:</p>
+              <ul>
+                <li>Use the tracking number provided in your confirmation email</li>
+                <li>Log into your account and view order history</li>
+                <li>Visit our <a href="order_tracking.html">Order Tracking page</a></li>
+                <li>Contact our support team for assistance</li>
+              </ul>
+              <p>Tracking information is usually available within 24-48 hours after your order ships.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="payment methods credit card paypal">
+            <button class="faq__question" aria-expanded="false">
+              <span>What payment methods do you accept?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>We accept the following payment methods:</p>
+              <ul>
+                <li>Credit Cards (Visa, MasterCard, American Express)</li>
+                <li>Debit Cards</li>
+                <li>PayPal</li>
+                <li>Apple Pay</li>
+                <li>Google Pay</li>
+                <li>Buy Now, Pay Later options (Klarna, Afterpay)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="cancel order cancellation modify">
+            <button class="faq__question" aria-expanded="false">
+              <span>Can I cancel or modify my order?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Order modifications depend on the processing status:</p>
+              <ul>
+                <li><strong>Before processing:</strong> Contact us immediately to cancel or modify</li>
+                <li><strong>During processing:</strong> Changes may not be possible</li>
+                <li><strong>After shipping:</strong> You can return items following our return policy</li>
+              </ul>
+              <p>Contact our support team as soon as possible for the best chance of modification.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shipping & Delivery -->
+        <div class="faq__section" data-category="shipping">
+          <h3 class="section__title">
+            <i class="ri-truck-line" aria-hidden="true"></i>
+            Shipping & Delivery
+          </h3>
+          
+          <div class="faq__item" data-keywords="shipping time delivery how long">
+            <button class="faq__question" aria-expanded="false">
+              <span>How long does shipping take?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Shipping times vary by location and method:</p>
+              <ul>
+                <li><strong>Standard Shipping:</strong> 3-5 business days</li>
+                <li><strong>Express Shipping:</strong> 1-2 business days</li>
+                <li><strong>Next-Day Delivery:</strong> Available in select areas</li>
+                <li><strong>International:</strong> 7-14 business days</li>
+              </ul>
+              <p>Processing time is typically 1-2 business days before shipping.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="shipping cost free delivery">
+            <button class="faq__question" aria-expanded="false">
+              <span>What are the shipping costs?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Our shipping rates are:</p>
+              <ul>
+                <li><strong>Free Standard Shipping:</strong> Orders over $75</li>
+                <li><strong>Standard Shipping:</strong> $5.99</li>
+                <li><strong>Express Shipping:</strong> $12.99</li>
+                <li><strong>Next-Day Delivery:</strong> $19.99</li>
+              </ul>
+              <p>International shipping costs vary by destination and are calculated at checkout.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="international shipping worldwide global">
+            <button class="faq__question" aria-expanded="false">
+              <span>Do you ship internationally?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Yes! We ship to over 50 countries worldwide. International customers should note:</p>
+              <ul>
+                <li>Shipping times: 7-14 business days</li>
+                <li>Customs fees may apply (customer responsibility)</li>
+                <li>Some products may have shipping restrictions</li>
+                <li>Return shipping costs are customer responsibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Returns & Exchanges -->
+        <div class="faq__section" data-category="returns">
+          <h3 class="section__title">
+            <i class="ri-arrow-go-back-line" aria-hidden="true"></i>
+            Returns & Exchanges
+          </h3>
+          
+          <div class="faq__item" data-keywords="return policy refund exchange">
+            <button class="faq__question" aria-expanded="false">
+              <span>What is your return policy?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Our return policy includes:</p>
+              <ul>
+                <li><strong>Return Window:</strong> 30 days from delivery date</li>
+                <li><strong>Condition:</strong> Items must be unworn with original tags</li>
+                <li><strong>Refund Method:</strong> Original payment method</li>
+                <li><strong>Processing Time:</strong> 3-5 business days after we receive your return</li>
+              </ul>
+              <p>Some items like intimate apparel and sale items may have different return policies.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="exchange size different color">
+            <button class="faq__question" aria-expanded="false">
+              <span>Can I exchange items for a different size or color?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Yes! We offer exchanges within 30 days. You can:</p>
+              <ul>
+                <li>Exchange for different size (subject to availability)</li>
+                <li>Exchange for different color (subject to availability)</li>
+                <li>Pay/receive refund for price differences</li>
+              </ul>
+              <p>Start your exchange request through your account or contact our support team.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="return shipping label cost">
+            <button class="faq__question" aria-expanded="false">
+              <span>Who pays for return shipping?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Return shipping costs depend on the reason:</p>
+              <ul>
+                <li><strong>Our error or defect:</strong> We provide free return shipping</li>
+                <li><strong>Change of mind:</strong> Customer pays return shipping ($6.99)</li>
+                <li><strong>Wrong size:</strong> Free return shipping for first exchange</li>
+                <li><strong>International returns:</strong> Customer responsibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sizing & Fit -->
+        <div class="faq__section" data-category="sizing">
+          <h3 class="section__title">
+            <i class="ri-ruler-line" aria-hidden="true"></i>
+            Sizing & Fit
+          </h3>
+          
+          <div class="faq__item" data-keywords="size guide chart measurements">
+            <button class="faq__question" aria-expanded="false">
+              <span>How do I find my size?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Finding your perfect size is easy:</p>
+              <ul>
+                <li>Use our comprehensive <a href="size_guide.html">Size Guide</a></li>
+                <li>Check the size chart on each product page</li>
+                <li>Read customer reviews for fit feedback</li>
+                <li>Contact us for personalized sizing advice</li>
+              </ul>
+              <p>When in doubt, we recommend ordering your usual size and taking advantage of our free exchange policy.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="fit tight loose true to size">
+            <button class="faq__question" aria-expanded="false">
+              <span>Do items run true to size?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Most of our items run true to size, but fit can vary by:</p>
+              <ul>
+                <li><strong>Brand:</strong> Some brands may run larger or smaller</li>
+                <li><strong>Style:</strong> Oversized pieces are noted in descriptions</li>
+                <li><strong>Fabric:</strong> Stretchy materials may fit differently</li>
+              </ul>
+              <p>Check the "Fit & Sizing" section on each product page and read customer reviews for the most accurate fit information.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Account & Profile -->
+        <div class="faq__section" data-category="account">
+          <h3 class="section__title">
+            <i class="ri-user-line" aria-hidden="true"></i>
+            Account & Profile
+          </h3>
+          
+          <div class="faq__item" data-keywords="create account sign up register">
+            <button class="faq__question" aria-expanded="false">
+              <span>How do I create an account?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>Creating an account is quick and easy:</p>
+              <ul>
+                <li>Click "Sign Up" in the top navigation</li>
+                <li>Enter your email address and create a password</li>
+                <li>Verify your email address</li>
+                <li>Complete your profile information</li>
+              </ul>
+              <p>Account benefits include faster checkout, order tracking, exclusive offers, and wishlist functionality.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="password reset forgot login">
+            <button class="faq__question" aria-expanded="false">
+              <span>I forgot my password. How do I reset it?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>To reset your password:</p>
+              <ul>
+                <li>Go to the login page</li>
+                <li>Click "Forgot Password?"</li>
+                <li>Enter your email address</li>
+                <li>Check your email for reset instructions</li>
+                <li>Follow the link to create a new password</li>
+              </ul>
+              <p>If you don't receive the email within 10 minutes, check your spam folder or contact support.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-keywords="newsletter unsubscribe email preferences">
+            <button class="faq__question" aria-expanded="false">
+              <span>How do I manage my email preferences?</span>
+              <i class="ri-add-line faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>You can manage your email preferences by:</p>
+              <ul>
+                <li>Logging into your account and visiting "Email Preferences"</li>
+                <li>Clicking "Unsubscribe" at the bottom of any email</li>
+                <li>Contacting our support team</li>
+              </ul>
+              <p>You can choose to receive promotional emails, order updates, or both.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="faq__contact">
+        <h2>Still Need Help?</h2>
+        <p>Can't find what you're looking for? Our support team is here to help!</p>
+        <div class="contact__options">
+          <a href="contact.html" class="contact__option">
+            <i class="ri-mail-line" aria-hidden="true"></i>
+            <div>
+              <h3>Email Support</h3>
+              <p>Get help via email</p>
+            </div>
+          </a>
+          <a href="support.html" class="contact__option">
+            <i class="ri-customer-service-2-line" aria-hidden="true"></i>
+            <div>
+              <h3>Help Center</h3>
+              <p>Browse support articles</p>
+            </div>
+          </a>
+          <button class="contact__option" id="live-chat">
+            <i class="ri-chat-1-line" aria-hidden="true"></i>
+            <div>
+              <h3>Live Chat</h3>
+              <p>Chat with us now</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#">CITY STYLE</a>
+          </div>
+          <p>Complete your style with awesome clothes from us.</p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="carrer.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="Store_location.html">Store Location</a></li>
+            <li><a href="order_tracking.html">Order Tracking</a></li>
+            <li><a href="size_guide.html">Size Guide</a></li>
+            <li><a href="FAQ.html" aria-current="page">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul class="footer__links">
+            <li><a href="Terms&conditons.html">Terms & Conditions</a></li>
+            <li><a href="privacy&policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © Bodhisatwa Dutta 2024. All rights reserved.
+      </div>
+    </footer>
+    
+    <script src="faq.js"></script>
 </body>
 </html>
